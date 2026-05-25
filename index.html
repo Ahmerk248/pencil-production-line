@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Programming Project - Pencil Line</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+        h1 { color: #333; }
+        img { max-width: 100%; height: auto; border: 1px solid #ccc; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Pencil Manufacturing Production Line Simulation</h1>
+    
+    <p>This project simulates an automated 4-stage industrial assembly pipeline designed for pencil manufacturing, tracking graphite core insertion, wooden body processing, eraser mounting, and ferrule crimping quality thresholds. Built as part of the Advanced Programming course at SRH University of Applied Sciences, the application utilizes a modular microservices architecture to process time-series assembly telemetry.</p>
+    
+    <p>The system features a Python backend running an internal finite state machine to monitor machine cycles and sensor behaviors. If the system records three consecutive part defects, an automated safety lockdown rule instantly trips the production architecture into a FAULTED safe mode until an operator manually triggers a reset control action.</p>
+    
+    <p>Data persistence is managed using an integrated InfluxDB time-series database container, which securely logs metrics like core production temperatures, state changes, total yields, and structural defects. These running telemetry streams are mapped straight into a Grafana visualization panel to monitor manufacturing efficiency metrics live.</p>
+
+    <h3>System Interface Previews</h3>
+    <p>Below is a preview of the active web-based Human Machine Interface (HMI) panel built to handle manual operator controls:</p>
+    <div style="background: #eee; padding: 50px; text-align: center; font-style: italic;">[Insert your HMI Screenshot here]</div>
+</body>
+</html>
